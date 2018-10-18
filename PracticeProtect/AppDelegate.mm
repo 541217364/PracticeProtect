@@ -36,7 +36,7 @@ BMKMapManager* _mapManager;
     self.window.rootViewController = adVC;
     
     [self.window makeKeyAndVisible];
-    
+    NSLog(@"1111111111");
     return YES;
 }
 
