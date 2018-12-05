@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<WXApiDelegate>
 
 @end
 
@@ -16,9 +16,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    SendMessageToWXReq *req = [[SendMessageToWXReq alloc] init];
+    req.bText = YES;
+    req.text = @"分享的内容";
+    req.scene = WXSceneSession;
+    [WXApi sendReq:req];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

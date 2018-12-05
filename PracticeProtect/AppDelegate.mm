@@ -12,7 +12,7 @@
 #define MAPKEY  @"iLk0D54jO0Ihy3wuC6dcYRFPO44ewvHw"
 BMKMapManager* _mapManager;
 
-@interface AppDelegate ()
+@interface AppDelegate ()<UIApplicationDelegate>
 
 @end
 
@@ -30,6 +30,8 @@ BMKMapManager* _mapManager;
     // 要使用百度地图，请先启动BaiduMapManager
     _mapManager = [[BMKMapManager alloc]init];
     [self loadMapManager];
+    
+    [WXApi registerApp:@"wx2ae6c139a506a501"];
     
     ZLAdvertisementController *adVC = [[ZLAdvertisementController alloc]init];
     adVC.adtype = 3; //1 单张图片 2 多张图片 3 视频
@@ -145,6 +147,22 @@ BMKMapManager* _mapManager;
 
 
 
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    return  [WXApi handleOpenURL:url delegate:self];
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return [WXApi handleOpenURL:url delegate:self];
+}
+
+//新的方法
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options
+{
+    
+        [WXApi handleOpenURL:url delegate:self];
+    
+        return  YES;
+}
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
