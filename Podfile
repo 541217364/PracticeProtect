@@ -7,6 +7,7 @@ target 'PracticeProtect' do
 
   # Pods for PracticeProtect
     pod 'WechatOpenSDK'
+    pod 'ZipArchive'
 
   target 'PracticeProtectTests' do
     inherit! :search_paths

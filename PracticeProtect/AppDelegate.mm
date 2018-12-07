@@ -34,7 +34,7 @@ BMKMapManager* _mapManager;
     [WXApi registerApp:@"wx2ae6c139a506a501"];
     
     ZLAdvertisementController *adVC = [[ZLAdvertisementController alloc]init];
-    adVC.adtype = 3; //1 单张图片 2 多张图片 3 视频
+    adVC.adtype = 0; //1 单张图片 2 多张图片 3 视频
     self.window.rootViewController = adVC;
     
     [self.window makeKeyAndVisible];
@@ -181,6 +181,9 @@ BMKMapManager* _mapManager;
 
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
+    
+    UIPasteboard *pboard = [UIPasteboard generalPasteboard];
+    NSLog(@"-------------+++++++++%@",pboard.string);
     
 }
 

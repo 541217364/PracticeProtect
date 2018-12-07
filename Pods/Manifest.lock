@@ -1,16 +1,20 @@
 PODS:
   - WechatOpenSDK (1.8.3)
+  - ZipArchive (1.4.0)
 
 DEPENDENCIES:
   - WechatOpenSDK
+  - ZipArchive
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - WechatOpenSDK
+    - ZipArchive
 
 SPEC CHECKSUMS:
   WechatOpenSDK: 3117412f8aafde4758cac1e8d20b93c67cafcfef
+  ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
 
-PODFILE CHECKSUM: 30ae991a918ae6604c5a85300ef24912d2f034f5
+PODFILE CHECKSUM: f5dfd6b6719cb6020983e462150497c2d8a652bf
 
 COCOAPODS: 1.5.3
