@@ -8,6 +8,12 @@ target 'PracticeProtect' do
   # Pods for PracticeProtect
     pod 'WechatOpenSDK'
     pod 'ZipArchive'
+    pod 'VCTransitionsLibrary'
+    pod 'iCarousel'
+    pod 'DateTools'
+    pod 'UICKeyChainStore'
+    pod 'SDCycleScrollView'
+    
 
   target 'PracticeProtectTests' do
     inherit! :search_paths

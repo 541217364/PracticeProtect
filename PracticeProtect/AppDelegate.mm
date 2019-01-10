@@ -1,12 +1,14 @@
 //
 //  AppDelegate.m
 //
-//  Created by 周启磊 on 2018/10/18.
+//  Created by 弦断有谁听 on 2018/10/18.
 //  Copyright © 2018年 DianBeiWaiMai. All rights reserved.
 //
 
 #import "AppDelegate.h"
 #import "ZLAdvertisementController.h"
+#import "TempViewController.h"
+#import "GoodsController.h"
 #import <BaiduMapAPI_Map/BMKMapComponent.h>
 
 #define MAPKEY  @"iLk0D54jO0Ihy3wuC6dcYRFPO44ewvHw"
@@ -35,10 +37,13 @@ BMKMapManager* _mapManager;
     
     ZLAdvertisementController *adVC = [[ZLAdvertisementController alloc]init];
     adVC.adtype = 0; //1 单张图片 2 多张图片 3 视频
-    self.window.rootViewController = adVC;
+    
+    GoodsController *tempVC = [[GoodsController alloc]init];
+    
+    
+    self.window.rootViewController = tempVC;
     
     [self.window makeKeyAndVisible];
-    NSLog(@"1111111111");
     return YES;
 }
 

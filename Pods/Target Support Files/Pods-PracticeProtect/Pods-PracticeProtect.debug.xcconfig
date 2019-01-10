@@ -1,8 +1,8 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/WechatOpenSDK" "${PODS_ROOT}/Headers/Public/ZipArchive"
-LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ZipArchive" "${PODS_ROOT}/WechatOpenSDK/WeChatSDK1.8.3"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/WechatOpenSDK" -isystem "${PODS_ROOT}/Headers/Public/ZipArchive"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"WeChatSDK" -l"ZipArchive" -l"c++" -l"sqlite3.0" -l"z" -framework "CFNetwork" -framework "CoreTelephony" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/DateTools" "${PODS_ROOT}/Headers/Public/SDCycleScrollView" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/UICKeyChainStore" "${PODS_ROOT}/Headers/Public/VCTransitionsLibrary" "${PODS_ROOT}/Headers/Public/WechatOpenSDK" "${PODS_ROOT}/Headers/Public/ZipArchive" "${PODS_ROOT}/Headers/Public/iCarousel"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DateTools" "${PODS_CONFIGURATION_BUILD_DIR}/SDCycleScrollView" "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage" "${PODS_CONFIGURATION_BUILD_DIR}/UICKeyChainStore" "${PODS_CONFIGURATION_BUILD_DIR}/VCTransitionsLibrary" "${PODS_CONFIGURATION_BUILD_DIR}/ZipArchive" "${PODS_CONFIGURATION_BUILD_DIR}/iCarousel" "${PODS_ROOT}/WechatOpenSDK/WeChatSDK1.8.3"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/DateTools" -isystem "${PODS_ROOT}/Headers/Public/SDCycleScrollView" -isystem "${PODS_ROOT}/Headers/Public/SDWebImage" -isystem "${PODS_ROOT}/Headers/Public/UICKeyChainStore" -isystem "${PODS_ROOT}/Headers/Public/VCTransitionsLibrary" -isystem "${PODS_ROOT}/Headers/Public/WechatOpenSDK" -isystem "${PODS_ROOT}/Headers/Public/ZipArchive" -isystem "${PODS_ROOT}/Headers/Public/iCarousel"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"DateTools" -l"SDCycleScrollView" -l"SDWebImage" -l"UICKeyChainStore" -l"VCTransitionsLibrary" -l"WeChatSDK" -l"ZipArchive" -l"c++" -l"iCarousel" -l"sqlite3.0" -l"z" -framework "CFNetwork" -framework "CoreTelephony" -framework "ImageIO" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

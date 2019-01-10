@@ -9,8 +9,11 @@
 #import "TRClassMethod.h"
 #import "TRLib.h"
 #import "TRClassMethod.h"
+#import "Reachability.h"
 #import "UIColor+UIColorConvert.h"
 #import "JSONModel.h"
+#import "CustomWebController.h"
+#import <SDCycleScrollView.h>
 
 // 动画时间
 #define ANIMATIONDURATION 0.3
